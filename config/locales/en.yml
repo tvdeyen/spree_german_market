@@ -1,0 +1,12 @@
+en:
+  acceptance_of_terms_and_conditions: I accept the terms and conditions.
+  activerecord:
+    errors:
+      models:
+        order:
+          attributes:
+            terms_conditions:
+              must_be_confirmed: "must be confirmed."
+    attributes:
+      order:
+        terms_conditions: "Terms and conditions"

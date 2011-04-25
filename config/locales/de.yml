@@ -1,0 +1,12 @@
+de:
+  acceptance_of_terms_and_conditions: Ich akzeptiere die geltenden AGB.
+  activerecord:
+    errors:
+      models:
+        order:
+          attributes:
+            terms_conditions:
+              must_be_confirmed: "müssen akzeptiert werden."
+    attributes:
+      order:
+        terms_conditions: "AGB"
