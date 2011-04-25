@@ -1,4 +1,4 @@
-namespace :spree_address_book do
+namespace :spree_german_market do
   desc "Copies all migrations and assets (NOTE: This will be obsolete with Rails 3.1)"
   task :install do
     Rake::Task['spree_german_market:install:migrations'].invoke
