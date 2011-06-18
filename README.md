@@ -2,6 +2,7 @@ SpreeGermanMarket
 ================
 
 This extension adds some features to Spree that are required by german law.
+
 * Confirmation of Terms and Conditions (in orders confirm step.)
 * variants price and cost_price with larger precision.
 
