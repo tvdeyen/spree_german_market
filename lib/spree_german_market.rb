@@ -1,4 +1,5 @@
 require 'spree_core'
+require 'spree_german_market_hooks'
 
 module SpreeGermanMarket
   class Engine < Rails::Engine
