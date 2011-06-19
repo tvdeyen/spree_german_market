@@ -1,8 +1,9 @@
 <div id="terms_conditions">
 	<%= check_box :order, :terms_conditions %>
 	<label for="order_terms_conditions">
-	<%- if defined?(show_page_path) -%>
-		<%= t('acceptance_of_terms_and_conditions_with_link') % {:url => show_page_path('agb')} %>
+	<%# if you have got spree_pages gem, or a similar cms with Page model, installed  %>
+	<%- if defined?(page_path) -%>
+		<%= (t('acceptance_of_terms_and_conditions_with_link') % {:link => page_path(SpreeGermanMarket::SETTINGS[:terms_page_perma_link])}).html_safe %>
 	<%- else -%>
 		<%= t('acceptance_of_terms_and_conditions') %>
 	<%- end -%>
