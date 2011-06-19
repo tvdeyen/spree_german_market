@@ -1,5 +1,6 @@
 de:
-  acceptance_of_terms_and_conditions: Ich akzeptiere die geltenden AGB.
+  acceptance_of_terms_and_conditions: 'Ich akzeptiere die geltenden AGB.'
+  acceptance_of_terms_and_conditions_with_link: 'Ich akzeptiere die <a href="%{link}" title="allgemeine Geschäftsbedingungen">geltenden AGB.</a>'
   activerecord:
     errors:
       models:

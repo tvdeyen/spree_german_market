@@ -1,5 +1,10 @@
-<pre>
-HUHU Terms & conditions
-<%= debug @order %>
-<%= debug order %>
-</pre>
+<div id="terms_conditions">
+	<%= check_box :order, :terms_conditions %>
+	<label for="order_terms_conditions">
+	<%- if defined?(show_page_path) -%>
+		<%= t('acceptance_of_terms_and_conditions_with_link') % {:url => show_page_path('agb')} %>
+	<%- else -%>
+		<%= t('acceptance_of_terms_and_conditions') %>
+	<%- end -%>
+	</label>
+</div>
