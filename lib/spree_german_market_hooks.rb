@@ -3,7 +3,7 @@ class SpreeGermanMarketHooks < Spree::ThemeSupport::HookListener
   
   Deface::Override.new(
     :virtual_path => "checkout/_confirm",
-    :insert_after => "#order_details",
+    :insert_bottom => "#order_details",
     :partial => 'shared/terms_conditions'
   )
   

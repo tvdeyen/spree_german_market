@@ -1,11 +1,14 @@
 <div id="terms_conditions">
-	<%= check_box :order, :terms_conditions %>
-	<label for="order_terms_conditions">
-	<%# if you have got spree_pages gem, or a similar cms with Page model, installed  %>
-	<%- if defined?(page_path) -%>
-		<%= (t('acceptance_of_terms_and_conditions_with_link') % {:link => page_path(SpreeGermanMarket::SETTINGS[:terms_page_perma_link])}).html_safe %>
-	<%- else -%>
-		<%= t('acceptance_of_terms_and_conditions') %>
-	<%- end -%>
-	</label>
+	<p class="field">
+		<%= check_box :order, :terms_conditions, :class => 'required' %>
+		<label for="order_terms_conditions">
+		<%# if you have got spree_pages gem, or a similar cms with Page model, installed  %>
+		<%- if defined?(page_path) -%>
+			<%= (t('acceptance_of_terms_and_conditions_with_link') % {:link => page_path(SpreeGermanMarket::SETTINGS[:terms_page_perma_link])}).html_safe %>
+		<%- else -%>
+			<%= t('acceptance_of_terms_and_conditions') %>
+		<%- end -%>
+		</label>
+		<span class="req">*</span>
+	</p>
 </div>
