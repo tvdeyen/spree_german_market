@@ -7,4 +7,10 @@ class SpreeGermanMarketHooks < Spree::ThemeSupport::HookListener
     :partial => 'shared/terms_conditions'
   )
   
+  Deface::Override.new(
+    :virtual_path => "shared/paypal_express_confirm",
+    :insert_bottom => "#order_details",
+    :partial => 'shared/terms_conditions'
+  )
+  
 end
